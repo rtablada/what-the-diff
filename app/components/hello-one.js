@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-export default class extends Component {
+export default class extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -11,11 +11,9 @@ export default class extends Component {
 
   render() {
     const { meetup, active } = this.state;
+    debugger;
 
-    return (<h1>
-      <a className={`home-link ${active ? 'active' : null}`}>
-        Hello {meetup}
-      </a>
-    </h1>);
+
+    return <h1>Hello {meetup}</h1>
   }
 }

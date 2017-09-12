@@ -12,7 +12,6 @@ const Rollup = require('broccoli-rollup');
 const Babel = require('broccoli-babel-transpiler');
 const mv = require('broccoli-stew').mv;
 const rm = require('broccoli-stew').rm;
-const jsx = require('rollup-plugin-jsx');
 
 const nodeResolve = require('rollup-plugin-node-resolve');
 const replace = require('rollup-plugin-replace');

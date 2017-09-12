@@ -1,7 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-
-export default class extends Component {
+export default class extends React.Component {
   afterClick() {
   this.setState({ count: this.state.count + 1 }, () => {
       this.setState({ count: this.state.count + 1 }, () => {

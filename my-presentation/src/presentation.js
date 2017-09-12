@@ -5,13 +5,13 @@ import React from 'react';
 
 // Import Spectacle Core tags
 import {
-  MarkdownSlides,
-  Deck
+  Markdown,
+  Deck,
+  Slide
 } from 'spectacle';
 
 // Import theme
 import createTheme from 'spectacle/lib/themes/default';
-import slideData from 'raw-loader!./slides.md';
 
 // Require CSS
 require('normalize.css');
@@ -31,7 +31,7 @@ export default class Presentation extends React.Component {
   render() {
     return (
       <Deck transition={['zoom', 'slide']} transitionDuration={500} theme={theme}>
-        {MarkdownSlides(slideData)}
+        <Markdown source={require('raw-loader!./another.md')}/>
       </Deck>
     );
   }
